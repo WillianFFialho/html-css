@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Orçamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Orçamentos</h1>
+    </header>
+
+    <section class="product-form">
+        <h2>Cadastrar Produto</h2>
+        <form id="productForm">
+            <input type="text" id="productName" placeholder="Nome do Produto" required>
+            <input type="number" id="productQuantity" placeholder="Quantidade" required>
+            <input type="number" id="productPrice" placeholder="Preço" required>
+            <!-- Outros campos aqui -->
+            <button type="submit">Adicionar Produto</button>
+        </form>
+    </section>
+
+    <section class="search">
+        <h2>Pesquisar Produtos</h2>
+            <input type="text" id="searchInput" placeholder="Digite o nome do produto">
+                <button id="searchButton">Buscar</button>
+        <ul id="searchResults">
+        <!-- Resultados da busca serão adicionados aqui -->
+        </ul>
+    </section>
+
+
+    <section class="budget">
+        <h2>Orçamento</h2>
+        <ul id="budgetList">
+            <!-- Itens do orçamento serão adicionados dinamicamente aqui -->
+        </ul>
+        <p id="totalAmount">Total: R$ 1.00</p>
+    </section>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
